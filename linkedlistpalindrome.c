@@ -54,7 +54,7 @@ void traversal(struct node2 *head2)
     }
 }
 
-struct node2* reverse(struct node2 *head2, struct node1 *head1)
+struct node2* copy(struct node2 *head2, struct node1 *head1)
 {
     struct node2 *newnode;
     struct node1 *temp = head1;
@@ -104,7 +104,7 @@ int main()
     traversal1(head1);
     printf(" \n");
     printf("the  second linkest list in reverse order\n");
-    head2=reverse(head2,head1);
+    head2=copy(head2,head1);
     traversal(head2);
      printf(" \n");
     printf("after comparing two lists\n");
